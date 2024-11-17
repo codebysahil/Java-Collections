@@ -1,0 +1,20 @@
+When you apply the iterator() method on a collection in Java
+The iterator() method is called on the collection (e.g., a List, Set, or Map). 
+This method returns an instance of an inner class that implements the Iterator interface. 
+This inner class is specific to the type of collection you’re working with.
+The iterator object is initialized with a reference to the collection and an internal cursor (or index) set to the starting position (usually 0). 
+This cursor keeps track of the current position in the collection.
+
+<-------------------------------------------------------------------------------------------------------------------------------------------------------->
+Traversal Methods:
+<-------------------------------------------------------------------------------------------------------------------------------------------------------->
+The iterator provides three main methods to traverse and manipulate the collection:
+hasNext(): Checks if there are more elements to iterate over.
+next(): Returns the next element in the collection and advances the cursor.
+remove(): Removes the last element returned by the iterator from the collection (optional operation).
+
+<-------------------------------------------------------------------------------------------------------------------------------------------------------->
+The iterator() method is called on listOfNames, which is an ArrayList. This returns an Iterator object.
+The hasNext() method checks if there are more elements in the list. Initially, the cursor is at position 0, so hasNext() returns true.
+The next() method returns the element at the current cursor position (e.g., “Alice”) and then increments the cursor to the next position.
+The iterator continues to loop through the collection using hasNext() and next() until all elements have been accessed.
